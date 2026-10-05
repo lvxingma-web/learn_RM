@@ -1,0 +1,9 @@
+sentry
+one
+two
+three
+four
+five
+outpost
+base
+not_armor

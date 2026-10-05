@@ -1,0 +1,15 @@
+%YAML:1.0
+# 模板！不是标定结果。fx/fy=0 会被程序拒绝。
+# 从真实标定文件复制内参、畸变及对应分辨率。
+image_width: 0
+image_height: 0
+camera_matrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [0., 0., 0., 0., 0., 0., 0., 0., 1.]
+distortion_coefficients: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [0., 0., 0., 0., 0.]

@@ -1,0 +1,15 @@
+%YAML:1.0
+# 全部按队内训练/推理代码填写。这里不会猜类别顺序。
+labels: [TODO0, TODO1, TODO2, TODO3, TODO4, TODO5, TODO6, TODO7, TODO8]
+negative_class_index: -1
+# 模型输入为 1x1x32x32，灰度图贴左上、右下补零。
+# 例如队内用 [0,1] 时填 1/255；用 [0,255] 时填 1。此处 0 表示未确认。
+input_scale: 0.
+output_logits: 0
+confidence_threshold: 0.5
+# 数字 ROI 在四点透视矫正图中的相对范围，需按训练方式填写。
+# 不能把整块装甲板当作训练时的数字图。
+roi_left: 0.
+roi_right: 0.
+roi_top: 0.
+roi_bottom: 0.

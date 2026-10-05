@@ -1,15 +1,25 @@
-# 默认忽略根目录下的所有内容
-/*
+# 忽略各项目的编译目录，不忽略项目源码、模型和标定。
+**/build/
+**/build-*/
+**/cmake-build-*/
 
-# 保留忽略规则
-!/.gitignore
+# 程序生成的结果和Python缓存，输入视频及模型仍保留。
+**/results/
+**/__pycache__/
+*.pyc
 
-# 保留 C++ 源码
-!/*.cpp
-!/*.hpp
+# 编译产物
+*.o
+*.obj
 
-# 保留编译配置
-!/CMakeLists.txt
+# 日志和临时文件
+*.log
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
 
-# 保留自己写的学习记录
-!/readme.md
+# 崩溃转储
+**/core
+**/core.[0-9]*

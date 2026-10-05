@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+  <rect width="1000" height="620" fill="#fbfcff"/>
+  <style>
+    text { font-family: "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; fill: #17233b; }
+    .title { font-size: 29px; font-weight: 700; }
+    .label { font-size: 22px; }
+    .small { font-size: 18px; fill: #475569; }
+    .line { stroke: #334155; stroke-width: 2; }
+    .ray { stroke: #e85d3f; stroke-width: 3; }
+    .measure { stroke: #126fbb; stroke-width: 3; }
+  </style>
+  <text x="40" y="52" class="title">为什么物体越远，画面中越窄？</text>
+  <text x="40" y="84" class="small">俯视示意图（位置与距离不按比例绘制）</text>
+
+  <!-- Camera at left, virtual image plane in front of the pinhole, object plane to the right. -->
+  <line x1="135" y1="305" x2="910" y2="305" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 7"/>
+  <circle cx="135" cy="305" r="10" fill="#17233b"/>
+  <text x="62" y="277" class="label">相机 O</text>
+  <text x="63" y="345" class="small">镜头中心</text>
+
+  <line x1="360" y1="197" x2="360" y2="413" class="line"/>
+  <text x="284" y="172" class="label">图像平面</text>
+  <line x1="860" y1="95" x2="860" y2="515" class="line"/>
+  <text x="777" y="69" class="label">真实装甲板</text>
+
+  <line x1="135" y1="305" x2="860" y2="105" class="ray"/>
+  <line x1="135" y1="305" x2="860" y2="505" class="ray"/>
+  <circle cx="360" cy="243" r="6" fill="#e85d3f"/>
+  <circle cx="360" cy="367" r="6" fill="#e85d3f"/>
+  <circle cx="860" cy="105" r="7" fill="#e85d3f"/>
+  <circle cx="860" cy="505" r="7" fill="#e85d3f"/>
+
+  <line x1="385" y1="243" x2="385" y2="367" class="measure"/>
+  <path d="M375 243 H395 M375 367 H395" class="measure"/>
+  <text x="405" y="312" class="label" fill="#126fbb">w：图中宽度（像素）</text>
+
+  <line x1="893" y1="105" x2="893" y2="505" class="measure"/>
+  <path d="M883 105 H903 M883 505 H903" class="measure"/>
+  <text x="730" y="326" class="label" fill="#126fbb">W：真实宽度（mm）</text>
+
+  <line x1="135" y1="451" x2="360" y2="451" class="measure"/>
+  <path d="M135 441 V461 M360 441 V461" class="measure"/>
+  <text x="172" y="484" class="label">fx：焦距参数（像素）</text>
+
+  <line x1="135" y1="549" x2="860" y2="549" class="measure"/>
+  <path d="M135 539 V559 M860 539 V559" class="measure"/>
+  <text x="425" y="583" class="label">Z：深度（mm）</text>
+
+  <rect x="30" y="108" width="225" height="74" rx="10" fill="#e8f2ff"/>
+  <text x="44" y="139" class="small">相似三角形：</text>
+  <text x="44" y="167" class="label">w / fx = W / Z</text>
+</svg>

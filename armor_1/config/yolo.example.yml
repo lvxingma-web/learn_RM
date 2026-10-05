@@ -1,0 +1,21 @@
+%YAML:1.0
+# 这是“协议模板”，不是可直接使用的队内模型配置。
+# 填完再传 --yolo-config。模型须为 OpenCV DNN 支持的 ONNX。
+input_width: 0
+input_height: 0
+input_scale: 0.
+swap_rb: 0
+# rows: [1,N,22]；channels: [1,22,N]。以真实输出为准。
+output_layout: rows
+scores_are_logits: 0
+objectness_index: -1
+class_indices: [-1, -1, -1, -1, -1, -1, -1, -1, -1]
+# 将模型中对应“左上、右上、右下、左下”的 x/y 列索引填在这里。
+keypoint_indices: [-1, -1, -1, -1, -1, -1, -1, -1]
+keypoint_units: pixels
+labels: [TODO0, TODO1, TODO2, TODO3, TODO4, TODO5, TODO6, TODO7, TODO8]
+negative_class_index: -1
+confidence_threshold: 0.5
+nms_threshold: 0.45
+# 此实现：图像贴输入左上，黑边只补右下，坐标只除缩放。
+# 若队内还有均值/标准差等额外预处理，须相应修改 models.hpp。

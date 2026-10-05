@@ -1,0 +1,13 @@
+%YAML:1.0
+# 模板，不是实际安装外参。零旋转矩阵会被拒绝，不能擅自改成单位阵。
+# p_imu = R_imu_camera * p_camera + t_imu_camera_mm
+R_imu_camera: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [0., 0., 0., 0., 0., 0., 0., 0., 0.]
+t_imu_camera_mm: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [0., 0., 0.]
