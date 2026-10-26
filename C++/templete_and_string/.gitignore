@@ -1,0 +1,8 @@
+# Visual Studio 生成物
+.vs/
+x64/
+Debug/
+Release/
+*.user
+*.obj
+*.exe
