@@ -5,7 +5,7 @@ C++ 模板与 string 的练习工程，对应讲义 **06 模板初阶**、**07 S
 ## 目录
 
 ```
-templete_and_string/
+template_and_string/
 ├── 模板STL_string_练习册.md    # 14 道练习 + 知识点对照 + 参考代码
 ├── code/                       # 可直接编译运行的配套代码
 │   ├── 01_template_basics.cpp  # 函数模板 Swap/Max、重载匹配规则
@@ -13,9 +13,9 @@ templete_and_string/
 │   ├── 03_array.cpp            # 类模板 Array<T>，begin/end 与范围 for
 │   ├── 04_mystring.cpp         # 深拷贝：传统版 / 现代版
 │   └── 05_list_node.cpp        # 链表节点模板 + 带头单链表
-├── templete_and_string.sln     # Visual Studio 工程
-└── templete_and_string/
-    ├── templete_and_string.vcxproj
+├── template_and_string.sln     # Visual Studio 工程
+└── template_and_string/
+    ├── template_and_string.vcxproj
     └── test.cpp                # 平时练习代码
 ```
 
