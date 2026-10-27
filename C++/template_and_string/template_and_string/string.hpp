@@ -5,6 +5,7 @@
 namespace lvx {
 	class string {
 
+	public:
 		//µü´úÆ÷
 		typedef char* iterator;
 		typedef const char* const_iterator;
@@ -69,8 +70,8 @@ void lvx::string::reserve(size_t n) {
 	{
 		char* str = new char[n + 1];
 		strcpy(str, _str);
-		_str = str;
 		delete[] _str;
+		_str = str;
 		_capacity = n;
 	}
 }
