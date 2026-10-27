@@ -51,7 +51,7 @@ lvx::string::string(){
 }
 
 lvx::string::string(const char* str)
-	:_size(sizeof(str)/sizeof(str[0]))
+	:_size(strlen(str))//sizeof»áËãÉÏ\0
 {
 	_str = new char[_size + 1];
 	strcpy(_str, str);
@@ -88,7 +88,7 @@ void lvx::string::push_back(char& c)
 
 void lvx::string::append(const char* c)
 {
-	size_t len = (sizeof(c) / sizeof(c[0]));
+	size_t len = (strlen(c));
 	if (_size + len > _capacity)
 	{
 		reserve(_size + len);
